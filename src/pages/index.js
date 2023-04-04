@@ -6,9 +6,18 @@ import deved from "../../public/dev-ed-wave.png"
 import design from "../../public/design.png"
 import code from "../../public/code.png"
 import consulting from "../../public/consulting.png"
-
+import web1 from "../../public/web1.png"
+import web2 from "../../public/web2.png"
+import web3 from "../../public/web3.png"
+import web4 from "../../public/web4.png"
+import web5 from "../../public/web5.png"
+import web6 from "../../public/web6.png"
+import { useState } from "react";
 
 export default function Home() {
+
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div>
       <Head>
@@ -17,7 +26,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" bg-white px-10">
+      <main className=" bg-white px-10 md:px-20 lg:px-40">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">Vishu Bansal</h1>
@@ -27,9 +36,9 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium">Vishu Bansal</h2>
-            <h3 className=" text-2xl py-2">Full Stack Web Developer.</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Vishu Bansal</h2>
+            <h3 className=" text-2xl py-2 md:text-3xl">Full Stack Web Developer.</h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">
               A Engineering Student who is interested in programming and various other fields. Just exploring different things.
               I am also a freelancer that can fulfill your development needs quickly and elegantly.
             </p>
@@ -39,7 +48,7 @@ export default function Home() {
             <AiFillLinkedin/>
             <AiFillGithub/>
           </div>
-          <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+          <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={deved} layout="fill" objectFit="cover" alt="" />
           </div>
         </section>
@@ -61,45 +70,75 @@ export default function Home() {
               I can complete it for you for sweet cash.
             </p>
           </div>
+          <div className="lg:flex gap-10">
+            <div className="text-center shadow-xl p-10 rounded-xl my-10">
+              <Image src={design} width={100} height={100} className="mx-auto" alt=""/>
+              <h3 className=" text-lg font-medium pt-8 pb-2">Beautiul Dsigns</h3>
+              <p className="py-2 ">
+                Creating elegant designs suited for your needs following coding design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">
+                Design tolls I used
+              </h4>
+              <p className="text-gray-800 py-1 ">Photoshop</p>
+              <p className="text-gray-800 py-1 ">Illustrator</p>
+              <p className="text-gray-800 py-1 ">Figma</p>
+            </div>
+            <div className="text-center shadow-xl p-10 rounded-xl my-10">
+              <Image src={code} width={100} height={100} className="mx-auto" alt=""/>
+              <h3 className=" text-lg font-medium pt-8 pb-2">Beautiul Dsigns</h3>
+              <p className="py-2 ">
+                Creating elegant designs suited for your needs following coding design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">
+                Design tolls I used
+              </h4>
+              <p className="text-gray-800 py-1 ">Photoshop</p>
+              <p className="text-gray-800 py-1 ">Illustrator</p>
+              <p className="text-gray-800 py-1 ">Figma</p>
+            </div>
+            <div className="text-center shadow-xl p-10 rounded-xl my-10">
+              <Image src={consulting} width={100} height={100} className="mx-auto" alt=""/>
+              <h3 className=" text-lg font-medium pt-8 pb-2">Beautiul Dsigns</h3>
+              <p className="py-2 ">
+                Creating elegant designs suited for your needs following coding design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">
+                Design tolls I used
+              </h4>
+              <p className="text-gray-800 py-1 ">Photoshop</p>
+              <p className="text-gray-800 py-1 ">Illustrator</p>
+              <p className="text-gray-800 py-1 ">Figma</p>
+            </div>
+          </div>
+        </section>
+
+        {/* section 3 */}
+        <section className="mb-20">
           <div>
-            <div className="text-center shadow-xl p-10 rounded-xl my-10">
-              <Image src={design} width={100} height={100} style={{margin: "auto",}} alt=""/>
-              <h3 className=" text-lg font-medium pt-8 pb-2">Beautiul Dsigns</h3>
-              <p className="py-2 ">
-                Creating elegant designs suited for your needs following coding design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">
-                Design tolls I used
-              </h4>
-              <p className="text-gray-800 py-1 ">Photoshop</p>
-              <p className="text-gray-800 py-1 ">Illustrator</p>
-              <p className="text-gray-800 py-1 ">Figma</p>
+            <h3 className="text-3xl py-1">Portfolio</h3>
+            <p className=" text-md py-2 leading-8 text-gray-800">
+            A web developer living in Delhi who <span className="text-teal-600"> works remotely and freelances</span> is a professional who creates and maintains websites for clients while working from the comfort of their own home. This individual has the technical skills and experience required to design and develop websites that meet the specific needs of their clients, including aspects such as user interface, functionality, and compatibility with different devices and web browsers.  
+            </p>
+          </div>
+          <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1">
+              <Image src={web1} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" alt=""></Image>
             </div>
-            <div className="text-center shadow-xl p-10 rounded-xl my-10">
-              <Image src={code} width={100} height={100} style={{margin: "auto",}} alt=""/>
-              <h3 className=" text-lg font-medium pt-8 pb-2">Beautiul Dsigns</h3>
-              <p className="py-2 ">
-                Creating elegant designs suited for your needs following coding design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">
-                Design tolls I used
-              </h4>
-              <p className="text-gray-800 py-1 ">Photoshop</p>
-              <p className="text-gray-800 py-1 ">Illustrator</p>
-              <p className="text-gray-800 py-1 ">Figma</p>
+            <div className="basis-1/3 flex-1">
+              <Image src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" alt=""></Image>
             </div>
-            <div className="text-center shadow-xl p-10 rounded-xl my-10">
-              <Image src={consulting} width={100} height={100} style={{margin: "auto",}} alt=""/>
-              <h3 className=" text-lg font-medium pt-8 pb-2">Beautiul Dsigns</h3>
-              <p className="py-2 ">
-                Creating elegant designs suited for your needs following coding design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">
-                Design tolls I used
-              </h4>
-              <p className="text-gray-800 py-1 ">Photoshop</p>
-              <p className="text-gray-800 py-1 ">Illustrator</p>
-              <p className="text-gray-800 py-1 ">Figma</p>
+            <div className="basis-1/3 flex-1">
+              <Image src={web3} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" alt=""></Image>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image src={web4} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" alt=""></Image>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image src={web5} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" alt=""></Image>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image src={web6} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" alt=""></Image>
             </div>
           </div>
         </section>

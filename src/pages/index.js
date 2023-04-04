@@ -17,7 +17,7 @@ import { useState } from "react";
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
-  
+
   return (
     <div className={darkMode ? 'dark' : ""}>
       <Head>
@@ -31,8 +31,8 @@ export default function Home() {
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="text-xl font-burtons">Vishu Bansal</h1>
             <ul className="flex items-center">
-              {/* <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl"/></li> */}
-              <li><a href="" onClick={() => setDarkMode(!darkMode)} className="text-2xl"><BsFillSunriseFill/></a></li>
+              <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl"/></li>
+              {/* <li><BsFillSunriseFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl"/></li> */}
               <li><a href="#" className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8">Resume</a></li>
             </ul>
           </nav>

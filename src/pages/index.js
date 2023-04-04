@@ -1,8 +1,12 @@
 import Head from "next/head";
 import {BsFillMoonStarsFill} from "react-icons/bs"
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram} from "react-icons/ai"
+import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from "react-icons/ai"
 import Image from "next/image"
 import deved from "../../public/dev-ed-wave.png"
+import design from "../../public/design.png"
+import code from "../../public/code.png"
+import consulting from "../../public/consulting.png"
+
 
 export default function Home() {
   return (
@@ -33,10 +37,70 @@ export default function Home() {
           <div className=" text-5xl flex justify-center gap-16 py-3 text-gray-600">
             <AiFillTwitterCircle/>
             <AiFillLinkedin/>
-            <AiFillInstagram/>
+            <AiFillGithub/>
           </div>
           <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
             <Image src={deved} layout="fill" objectFit="cover" alt="" />
+          </div>
+        </section>
+
+        {/* section second */}
+
+        <section>
+          <div>
+            <h3 className=" text-3xl py-1">Services I offer</h3>
+            <p className=" text-md py-2 leading-8 text-gray-800">
+              Since the beginning of my journey as a freelancer lorem ipsum somthing for sure 
+              definately {"I'"}ve done remote work for... props somthing
+              Since the <span className=" text-teal-600">beginning of my journey</span> as a freelancer lorem ipsum somthing for sure 
+              definately {"I'"}ve done remote work for... props somthing
+            </p>
+            <p className=" text-md py-2 leading-8 text-gray-800">
+              I offer from a wide range fo services, including making projects for your work,
+              making fully functioning full stack site or even small landing pages. whatever is your need 
+              I can complete it for you for sweet cash.
+            </p>
+          </div>
+          <div>
+            <div className="text-center shadow-xl p-10 rounded-xl my-10">
+              <Image src={design} width={100} height={100} style={{margin: "auto",}} alt=""/>
+              <h3 className=" text-lg font-medium pt-8 pb-2">Beautiul Dsigns</h3>
+              <p className="py-2 ">
+                Creating elegant designs suited for your needs following coding design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">
+                Design tolls I used
+              </h4>
+              <p className="text-gray-800 py-1 ">Photoshop</p>
+              <p className="text-gray-800 py-1 ">Illustrator</p>
+              <p className="text-gray-800 py-1 ">Figma</p>
+            </div>
+            <div className="text-center shadow-xl p-10 rounded-xl my-10">
+              <Image src={code} width={100} height={100} style={{margin: "auto",}} alt=""/>
+              <h3 className=" text-lg font-medium pt-8 pb-2">Beautiul Dsigns</h3>
+              <p className="py-2 ">
+                Creating elegant designs suited for your needs following coding design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">
+                Design tolls I used
+              </h4>
+              <p className="text-gray-800 py-1 ">Photoshop</p>
+              <p className="text-gray-800 py-1 ">Illustrator</p>
+              <p className="text-gray-800 py-1 ">Figma</p>
+            </div>
+            <div className="text-center shadow-xl p-10 rounded-xl my-10">
+              <Image src={consulting} width={100} height={100} style={{margin: "auto",}} alt=""/>
+              <h3 className=" text-lg font-medium pt-8 pb-2">Beautiul Dsigns</h3>
+              <p className="py-2 ">
+                Creating elegant designs suited for your needs following coding design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">
+                Design tolls I used
+              </h4>
+              <p className="text-gray-800 py-1 ">Photoshop</p>
+              <p className="text-gray-800 py-1 ">Illustrator</p>
+              <p className="text-gray-800 py-1 ">Figma</p>
+            </div>
           </div>
         </section>
       </main>

@@ -13,6 +13,7 @@ import web4 from "../../public/web4.png"
 import web5 from "../../public/web5.png"
 import web6 from "../../public/web6.png"
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -29,25 +30,24 @@ export default function Home() {
       <main className=" bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="text-xl font-burtons">Vishu Bansal</h1>
+            <h1 className="text-xl font-burtons">vbstellar</h1>
             <ul className="flex items-center">
-              <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl"/></li>
+              <li className="hover:text-gray-400"><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl"/></li>
               {/* <li><BsFillSunriseFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl"/></li> */}
-              <li><a href="#" className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8">Resume</a></li>
+              <li><a href="https://resume.io/r/Y6q4mHQB6" className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-lg ml-8 hover:bg-gradient-to-l">Resume</a></li>
             </ul>
           </nav>
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400">Vishu Bansal</h2>
             <h3 className=" text-2xl py-2 md:text-3xl dark:text-white">Full Stack Web Developer.</h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200">
-              A Engineering Student who is interested in programming and various other fields. Just exploring different things.
-              I am also a freelancer that can fulfill your development needs quickly and elegantly.
+              A Engineering Student who is interested in programming. I love to build web apps and can make full stack web applications.
             </p>
           </div>
           <div className=" text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-            <AiFillTwitterCircle/>
-            <AiFillLinkedin/>
-            <AiFillGithub/>
+            <a href="https://www.twitter.com/vbstellar" className="hover:text-blue-400" ><AiFillTwitterCircle/></a>
+            <a href="https://www.linkedin.com/in/vishuban/" className="hover:text-blue-800" ><AiFillLinkedin/></a>
+            <a href="https://www.github.com/vbstellar" className="hover:text-black" ><AiFillGithub/></a>
           </div>
           <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={deved} layout="fill" objectFit="cover" alt="" />

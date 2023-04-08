@@ -246,7 +246,7 @@ export default function Home() {
                 works remotely 
               </span>{" "}
               and also do <span className="text-teal-600">Freelancing.</span> {" "}
-              If you are someone who have idea but don{"'"}t know who to bring it to
+              If you are someone who have idea but don{"'"}t know how to bring it to
               reality then leave it to me. I can create beautiful web applications and help you
               grow your business, make landing pages, create your portfolio website, your projects, etc.
               You can contact me on <a href="#" className=" font-bold text-teal-600"> my socials</a> or <a href="mailto:bansalvishu56@gmail.com" className=" font-bold text-teal-600">mail me </a>and I surely will respond.

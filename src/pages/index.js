@@ -208,25 +208,25 @@ export default function Home() {
               <SiExpress/>
             </a>
             <a
-              href="https://expressjs.com/"
+              href="https://git-scm.com/"
               className="text-red-600"
             >
               <BsGit/>
             </a>
             <a
-              href="https://expressjs.com/"
+              href="https://github.com/"
               className="text-black dark:text-white"
             >
               <AiFillGithub/>
             </a>
             <a
-              href="https://expressjs.com/"
+              href="https://java.com/"
               className="dark:text-white text-black"
             >
               <DiJava/>
             </a>
             <a
-              href="https://expressjs.com/"
+              href="https://www.python.org/"
               className="dark:text-white"
             >
               <DiPython/>

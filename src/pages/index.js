@@ -1,4 +1,5 @@
 import Head from "next/head";
+import ProjectCard from "@/components/ProjectCard";
 import { BsFillMoonStarsFill, BsFillSunriseFill } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
@@ -18,15 +19,15 @@ import { DiNodejs, DiMongodb, DiJava, DiPython, DiCss3 } from "react-icons/di";
 import { BsGit } from "react-icons/bs";
 import Image from "next/image";
 import deved from "../../public/dev-ed-wave.png";
-import design from "../../public/design.png";
-import code from "../../public/code.png";
-import consulting from "../../public/consulting.png";
-import web1 from "../../public/web1.png";
-import web2 from "../../public/web2.png";
-import web3 from "../../public/web3.png";
-import web4 from "../../public/web4.png";
-import web5 from "../../public/web5.png";
-import web6 from "../../public/web6.png";
+import p1 from "../../public/p1.png"
+import p2 from "../../public/p2.png"
+import p3 from "../../public/p3.png"
+import web1 from "../../public/website1.png";
+import web2 from "../../public/website2.png";
+import web3 from "../../public/website3.png";
+import web4 from "../../public/website4.png";
+import web5 from "../../public/website5.png";
+import web6 from "../../public/website6.png";
 import { useState } from "react";
 
 export default function Home() {
@@ -70,8 +71,9 @@ export default function Home() {
               Full Stack Web Developer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200">
-              A Engineering Student who is interested in programming. I love to
-              build web apps and can make full stack web applications.
+              A Engineering Student and a <span className="text-teal-600">Freelancer</span>  who is interested in programming. I love to
+              build web apps and can make full stack web applications. <span className="text-teal-600">Contact me</span> on any of my socials to 
+              bring your ideas to reality.
             </p>
           </div>
           <div className=" text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
@@ -109,66 +111,38 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:bg-gray-300 ">
-              <Image
-                src={design}
-                width={100}
-                height={100}
-                className="mx-auto"
-                alt=""
-              />
-              <h3 className=" text-lg font-medium pt-8 pb-2">
-                Beautiul Dsigns
-              </h3>
-              <p className="py-2 ">
-                Creating elegant designs suited for your needs following coding
-                design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">Design tolls I used</h4>
-              <p className="text-gray-800 py-1 ">Photoshop</p>
-              <p className="text-gray-800 py-1 ">Illustrator</p>
-              <p className="text-gray-800 py-1 ">Figma</p>
-            </div>
-            <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:bg-gray-300">
-              <Image
-                src={code}
-                width={100}
-                height={100}
-                className="mx-auto"
-                alt=""
-              />
-              <h3 className=" text-lg font-medium pt-8 pb-2">
-                Beautiul Dsigns
-              </h3>
-              <p className="py-2 ">
-                Creating elegant designs suited for your needs following coding
-                design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">Design tolls I used</h4>
-              <p className="text-gray-800 py-1 ">Photoshop</p>
-              <p className="text-gray-800 py-1 ">Illustrator</p>
-              <p className="text-gray-800 py-1 ">Figma</p>
-            </div>
-            <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:bg-gray-300">
-              <Image
-                src={consulting}
-                width={100}
-                height={100}
-                className="mx-auto"
-                alt=""
-              />
-              <h3 className=" text-lg font-medium pt-8 pb-2">
-                Beautiul Dsigns
-              </h3>
-              <p className="py-2 ">
-                Creating elegant designs suited for your needs following coding
-                design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">Design tolls I used</h4>
-              <p className="text-gray-800 py-1 ">Photoshop</p>
-              <p className="text-gray-800 py-1 ">Illustrator</p>
-              <p className="text-gray-800 py-1 ">Figma</p>
-            </div>
+
+          <ProjectCard 
+            logo={p1}
+            name="Aarna" 
+            desc="Created a fully functional website for a Diagnostic Centre named Aarna."
+            link="https://github.com/vbstellar/Aarna"
+            website="https://aarnadiagnosticcentre.netlify.app/"
+            tech1="React"
+            tech2="Axios Server"
+            tech3="TailwindCss"
+          />
+            <ProjectCard 
+            logo={p2}
+            name="Keeper" 
+            desc="Keeper web app is a clone of google keep application to take notes."
+            link="https://github.com/vbstellar/Keeper"
+            website="https://github.com/vbstellar/Keeper"
+            tech1="React"
+            tech2="JS"
+            tech3="Bootstrap"
+          />
+          <ProjectCard 
+            logo={p3}
+            name="Blog Site" 
+            desc="Blog site to post blogs on tech topics. It uses local server to fetch files."
+            link="https://github.com/vbstellar/BlogSite_NextApp"
+            website="https://blog-site-next-app.vercel.app/"
+            tech1="NextJs"
+            tech2="Typescript"
+            tech3="Vanilla Css"
+          />
+           
           </div>
         </section>
 
@@ -178,7 +152,7 @@ export default function Home() {
             <h3 className=" text-3xl py-8 dark:text-white font-semibold">
               Skills
             </h3>
-            <div className=" text-5xl flex justify-start gap-16 py-3">
+            <div className=" text-5xl grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-16 py-3">
             <a
               href="https://nextjs.org/"
               className="text-black dark:text-white"
@@ -245,8 +219,6 @@ export default function Home() {
             >
               <AiFillGithub/>
             </a>
-            </div>
-            <div className="text-5xl flex justify-start gap-16 py-3">
             <a
               href="https://expressjs.com/"
               className="dark:text-white text-black"
@@ -259,7 +231,7 @@ export default function Home() {
             >
               <DiPython/>
             </a>
-            </div>
+          </div>
           </div>
         </section>
 
@@ -267,18 +239,18 @@ export default function Home() {
         <section className="pb-20">
           <div>
             <h3 className="text-3xl py-8 dark:text-white font-semibold">Experience</h3>
-            <p className=" text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              A web developer living in Delhi who{" "}
+            <p className=" text-md py-2 leading-8 text-gray-800 dark:text-gray-200 pb-16">
+              I am a web developer living in Delhi who{" "}
               <span className="text-teal-600">
                 {" "}
-                works remotely and freelances
+                works remotely 
               </span>{" "}
-              is a professional who creates and maintains websites for clients
-              while working from the comfort of their own home. This individual
-              has the technical skills and experience required to design and
-              develop websites that meet the specific needs of their clients,
-              including aspects such as user interface, functionality, and
-              compatibility with different devices and web browsers.
+              and also do <span className="text-teal-600">Freelancing.</span> {" "}
+              If you are someone who have idea but don{"'"}t know who to bring it to
+              reality then leave it to me. I can create beautiful web applications and help you
+              grow your business, make landing pages, create your portfolio website, your projects, etc.
+              You can contact me on <a href="#" className=" font-bold text-teal-600"> my socials</a> or <a href="mailto:bansalvishu56@gmail.com" className=" font-bold text-teal-600">mail me </a>and I surely will respond.
+              Below you can see some of my work.
             </p>
           </div>
           <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
@@ -294,27 +266,7 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1">
               <Image
-                src={web2}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                alt=""
-              ></Image>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web3}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                alt=""
-              ></Image>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web4}
+                src={web6}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
@@ -334,7 +286,27 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1">
               <Image
-                src={web6}
+                src={web3}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt=""
+              ></Image>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={web2}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                alt=""
+              ></Image>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={web4}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}

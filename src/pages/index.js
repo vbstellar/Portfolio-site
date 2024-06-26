@@ -55,7 +55,7 @@ export default function Home() {
               {/* <li><BsFillSunriseFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl"/></li> */}
               <li>
                 <a
-                  href="https://resume.io/r/Y6q4mHQB6"
+                  href="https://docs.google.com/document/d/1x4uQDsqlwIfq7BC4NydcD6MeiBDblgD4VE1r0hSpakU/edit?usp=sharing"
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-lg ml-8 hover:bg-gradient-to-l"
                 >
                   Resume
